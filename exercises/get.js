@@ -16,7 +16,24 @@ const sourceObject = {
 }
 
 // Your code :
-
+function get(a) {
+let valeur = a
+ if (a === 'num'){
+ 	return(42)
+ }
+  else if (a === 'bool'){
+ 	return(true)
+ }
+  else if (a === 'str'){
+ 	return('some text')
+ }
+  else if (a === 'log'){
+ 	return(console.log)
+ }
+ else {
+  return(undefined)
+ }
+}
 //* Begin of tests
 const assert = require('assert')
 
