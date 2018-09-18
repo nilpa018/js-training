@@ -10,10 +10,13 @@
  *
  */
 
-
+function jadenCase(str) {
+    return str.replace(/\w\S*/g, function(txt){
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+    });
+}
 
 //* Begin of tests
 const assert = require('assert')
-
-assert.fail('You must write your own tests')
+assert.strictEqual(jadenCase('wild code school'), 'Wild Code School');
 // End of tests */

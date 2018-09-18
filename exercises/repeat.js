@@ -8,6 +8,13 @@
  *
  */
 
+ function repeat(string, number){
+    let somme = ""
+    for(let i=0;i<number;i++)
+    	somme+=string
+    return(somme)
+  }
+
 //* Begin of tests
 const assert = require('assert')
 
